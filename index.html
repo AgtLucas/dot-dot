@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>W05</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .hamilton {
+      position: relative;
+      width: 960px;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<main>
+  <img class="hamilton" src="img/hamilton.jpg" alt="Lewis Hamilton">
+</main>
+
+<script src="breathing-halftone.js"></script>
+
+<script>
+  (function () {
+    var img = document.querySelector('#hero img');
+
+    new BreathingHalftone( img, {
+      dotSize: 1/40
+    });
+  })();
+</script>
+
+</body>
+</html>
